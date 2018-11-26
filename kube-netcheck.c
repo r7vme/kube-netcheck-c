@@ -4,13 +4,13 @@
    connection it sleeps for 10 seconds and then
    attempts again. App will exit(1) on any error. */
 #include <netdb.h>
+#include <netinet/in.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <time.h>
-#include <netinet/in.h>
 #include <unistd.h>
 
 const char *HOSTNAME = "kube-netcheck";
