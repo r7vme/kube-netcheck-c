@@ -42,4 +42,4 @@ spec:
               memory: 10Mi
           livenessProbe:
             tcpSocket:
-              port: 8080
+              port: 6666
