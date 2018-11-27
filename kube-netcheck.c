@@ -23,6 +23,9 @@ int main()
     int l_sockfd;
     struct sockaddr_in l_addr;
 
+    // Do not buffer printf.
+    setbuf(stdout, NULL);
+
     // Server part.
     l_sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (l_sockfd == -1)
